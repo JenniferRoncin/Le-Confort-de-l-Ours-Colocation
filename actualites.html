@@ -4,19 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actualités - Site de la Colocation</title>
+    
+    <!-- Inclure Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-P+2XPMYqDyN4Ks1dMx8pcZfP1Z1JQ34jD7s5Dc8x8X2P3m+qYhHPtU5oZt6uWjHQ2WzjVOk+PvRCK3cdVK/xDg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles CSS internes (ou lien vers un fichier externe) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Fond gris clair */
+            color: #333; /* Texte noir */
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .article {
+            background-color: #fff; /* Fond blanc */
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            color: #3498db; /* Couleur bleue */
+        }
+        .article p {
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: rgba(0, 0, 0, 0.7); /* Fond foncé pour le pied de page */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Actualités</h1>
+    <div class="container">
+        <div class="article">
+            <h2>Dernier Passage de la Femme de Ménage</h2>
+            <p><strong>Date:</strong> 15 juin 2024</p>
+            <p><strong>Produits Ménagers:</strong> Liste des produits à renouveler.</p>
+            <p><strong>Commentaire:</strong> Optionnel, commentaire de la femme de ménage.</p>
+        </div>
+        
+        <div class="article">
+            <h2>Prochain Passage Prévu</h2>
+            <p><strong>Date Prévue:</strong> 20 juin 2024</p>
+        </div>
+    </div>
     
-    <h2>Passage de la Femme de Ménage</h2>
-    <p>Liste des produits ménagers à renouveler : <strong>Produit A, Produit B, Produit C</strong></p>
-    <p>Commentaire : <em>Les sols ont été bien nettoyés mais il reste quelques tâches difficiles à enlever.</em></p>
-    <p>Dernier passage : 15 juin 2024</p>
-    <p>Prochain passage prévu : 30 juin 2024</p>
-    
-    <h2>Espace Commentaires</h2>
-    <p>Espace pour les commentaires du propriétaire à destination des locataires...</p>
-    
-    <p><a href="index.html">Retour à l'accueil</a></p>
+    <div class="footer">
+        <p>&copy; 2024 Colocation. Tous droits réservés.</p>
+    </div>
 </body>
 </html>
