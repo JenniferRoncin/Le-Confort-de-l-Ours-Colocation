@@ -19,7 +19,6 @@
             background-size: cover;
             color: #fff; /* Texte en blanc pour contraste */
         }
-
         .container {
             max-width: 800px;
             margin: 100px auto 20px; /* Ajout d'une marge top de 100px */
@@ -29,12 +28,29 @@
         h1 {
             margin-top: 0;
         }
+        .personal-info {
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .personal-info h2 {
+            color: #fff; /* Titre en blanc */
+        }
+        .personal-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .personal-info ul li {
+            color: #fff; /* Texte en blanc */
+            margin-bottom: 5px;
+        }
         .cta {
             margin-top: 20px;
         }
         .cta a {
             display: inline-block;
-            padding: 20px;
+            padding: 10px 20px;
             background-color: #3498db; /* Couleur de fond bleue */
             color: #fff; /* Texte en blanc */
             text-decoration: none;
@@ -46,7 +62,7 @@
             background-color: #2980b9; /* Couleur de fond bleue foncée au survol */
         }
         .cta a i {
-            font-size: 24px;
+            font-size: 18px;
             margin-right: 10px;
         }
         .footer {
@@ -65,12 +81,23 @@
     </style>
 </head>
 <body>
-    <div class="overlay"></div> <!-- Overlay noir transparent -->
-    
     <div class="container">
         <h1>Espace Personnel</h1>
         <!-- Contenu spécifique à chaque page -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque mauris nec felis rutrum, sit amet molestie ante malesuada.</p>
+        <div class="personal-info">
+            <h2>Informations Personnelles</h2>
+            <ul>
+                <li><i class="fas fa-money-check-alt"></i> Montant du loyer: 500 €</li>
+                <li><i class="fas fa-calendar-alt"></i> Date limite de paiement du loyer: 5 du mois</li>
+                <li><i class="fas fa-money-bill-wave"></i> Derniers paiements reçus:
+                    <ul>
+                        <li>Paiement reçu le 2 janvier 2024 - 500 €</li>
+                        <li>Paiement reçu le 2 décembre 2023 - 500 €</li>
+                    </ul>
+                </li>
+                <!-- Ajoutez d'autres informations pertinentes ici -->
+            </ul>
+        </div>
         <div class="cta">
             <a href="index.html"><i class="fas fa-home"></i> Retour à l'Accueil</a>
         </div>
