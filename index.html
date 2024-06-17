@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Site de la Colocation</title>
+    <style>
+        /* Styles CSS facultatifs pour améliorer l'apparence */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-form {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .login-form input[type="text"], 
+        .login-form input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Site de la Colocation</h1>
+            <p>Bienvenue ! Connectez-vous pour accéder à votre espace personnel.</p>
+        </header>
+        
+        <div class="login-form">
+            <h2>Connexion</h2>
+            <form action="authentification.php" method="post">
+                <input type="text" name="username" placeholder="Nom d'utilisateur" required><br>
+                <input type="password" name="password" placeholder="Mot de passe" required><br>
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+
+        <nav>
+            <a href="#contacts">Contacts Utiles</a> |
+            <a href="#actualites">Actualités</a> |
+            <a href="#espaces">Espaces Personnels</a>
+        </nav>
+
+        <section id="actualites">
+            <h2>Actualités Récentes</h2>
+            <article>
+                <h3>Passage de la Femme de Ménage</h3>
+                <p>Liste des produits ménagers à renouveler : <strong>Produit A, Produit B, Produit C</strong></p>
+                <p>Commentaire : <em>Les sols ont été bien nettoyés mais il reste quelques tâches difficiles à enlever.</em></p>
+                <p>Dernier passage : 15 juin 2024</p>
+                <p>Prochain passage prévu : 30 juin 2024</p>
+            </article>
+            <!-- Autres actualités à ajouter ici -->
+        </section>
+
+        <footer>
+            <p>Contact : <a href="mailto:proprietaire@colocation.com">proprietaire@colocation.com</a> | Tél : 0123456789</p>
+        </footer>
+    </div>
+</body>
+</html>
