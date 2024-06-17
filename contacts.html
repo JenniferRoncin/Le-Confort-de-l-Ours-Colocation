@@ -15,27 +15,46 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0; /* Fond gris clair */
-            color: #333; /* Texte noir */
+            background: url('https://images.pexels.com/photos/3826678/pexels-photo-3826678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff; /* Texte en blanc pour contraste */
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         .container {
             max-width: 800px;
             margin: 100px auto 20px; /* Ajout d'une marge top de 100px */
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9); /* Fond blanc avec opacité */
+            text-align: center;
         }
-        .contact-info {
-            margin-bottom: 20px;
+        h1 {
+            margin-top: 0;
         }
-        .contact-info h2 {
-            color: #3498db; /* Couleur bleue */
+        .cta {
+            margin-top: 20px;
         }
-        .contact-info ul {
-            list-style-type: none;
-            padding: 0;
+        .cta a {
+            display: inline-block;
+            padding: 20px;
+            background-color: #3498db; /* Couleur de fond bleue */
+            color: #fff; /* Texte en blanc */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin: 10px;
         }
-        .contact-info li {
-            margin-bottom: 10px;
+        .cta a:hover {
+            background-color: #2980b9; /* Couleur de fond bleue foncée au survol */
+        }
+        .cta a i {
+            font-size: 24px;
+            margin-right: 10px;
         }
         .footer {
             background-color: rgba(0, 0, 0, 0.7); /* Fond foncé pour le pied de page */
@@ -52,6 +71,24 @@
         }
     </style>
 </head>
+<body>
+    <div class="overlay"></div> <!-- Overlay noir transparent -->
+    
+    <div class="container">
+        <h1>Titre de la Page</h1>
+        <!-- Contenu spécifique à chaque page -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque mauris nec felis rutrum, sit amet molestie ante malesuada.</p>
+        <div class="cta">
+            <a href="index.html"><i class="fas fa-home"></i> Retour à l'Accueil</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Colocation. Tous droits réservés.</p>
+    </div>
+</body>
+</html>
+
 <body>
     <div class="container">
         <div class="contact-info">
