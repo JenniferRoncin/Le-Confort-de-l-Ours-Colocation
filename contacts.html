@@ -4,28 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts Utiles - Site de la Colocation</title>
+    
+    <!-- Inclure Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-P+2XPMYqDyN4Ks1dMx8pcZfP1Z1JQ34jD7s5Dc8x8X2P3m+qYhHPtU5oZt6uWjHQ2WzjVOk+PvRCK3cdVK/xDg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles CSS internes (ou lien vers un fichier externe) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Fond gris clair */
+            color: #333; /* Texte noir */
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .contact-info {
+            background-color: #fff; /* Fond blanc */
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .contact-info h2 {
+            color: #3498db; /* Couleur bleue */
+        }
+        .contact-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: rgba(0, 0, 0, 0.7); /* Fond foncé pour le pied de page */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Contacts Utiles</h1>
+    <div class="container">
+        <div class="contact-info">
+            <h2>Contacts Utiles</h2>
+            <ul>
+                <li><i class="fas fa-user"></i> Propriétaire: Nom du Propriétaire</li>
+                <li><i class="fas fa-phone"></i> Téléphone: +33 123 456 789</li>
+                <li><i class="fas fa-envelope"></i> Email: <a href="mailto:proprietaire@colocation.com">proprietaire@colocation.com</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h2>Autres Colocataires</h2>
+            <ul>
+                <li><i class="fas fa-users"></i> Colocataire 1: Nom du Colocataire 1</li>
+                <li><i class="fas fa-users"></i> Colocataire 2: Nom du Colocataire 2</li>
+                <li><i class="fas fa-users"></i> Colocataire 3: Nom du Colocataire 3</li>
+                <li><i class="fas fa-users"></i> Colocataire 4: Nom du Colocataire 4</li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h2>Syndic de l'Immeuble</h2>
+            <ul>
+                <li><i class="fas fa-building"></i> Nom du Syndic: Syndic de l'Immeuble</li>
+                <li><i class="fas fa-phone"></i> Téléphone: +33 987 654 321</li>
+                <li><i class="fas fa-envelope"></i> Email: <a href="mailto:syndic@immeuble.com">syndic@immeuble.com</a></li>
+            </ul>
+        </div>
+    </div>
     
-    <h2>Contact du Propriétaire</h2>
-    <p>Nom : [Votre Nom]</p>
-    <p>Téléphone : [Votre Numéro de Téléphone]</p>
-    <p>Email : <a href="mailto:proprietaire@colocation.com">proprietaire@colocation.com</a></p>
-    
-    <h2>Contacts des Colocataires</h2>
-    <ul>
-        <li>Nom Colocataire 1 : [Nom] - Email : [Email]</li>
-        <li>Nom Colocataire 2 : [Nom] - Email : [Email]</li>
-        <li>Nom Colocataire 3 : [Nom] - Email : [Email]</li>
-        <li>Nom Colocataire 4 : [Nom] - Email : [Email]</li>
-    </ul>
-    
-    <h2>Contact du Syndic de l'Immeuble</h2>
-    <p>Nom : [Nom du Syndic]</p>
-    <p>Téléphone : [Numéro de Téléphone du Syndic]</p>
-    <p>Email : [Email du Syndic]</p>
-
-    <p><a href="index.html">Retour à l'accueil</a></p>
+    <div class="footer">
+        <p>&copy; 2024 Colocation. Tous droits réservés.</p>
+    </div>
 </body>
 </html>
