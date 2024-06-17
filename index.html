@@ -19,7 +19,12 @@
             background-size: cover;
             color: #fff; /* Texte en blanc pour contraste */
         }
-
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         .container {
             max-width: 800px;
@@ -69,11 +74,13 @@
     <div class="overlay"></div> <!-- Overlay noir transparent -->
     
     <div class="container">
-        <h1>Bienvenue dans votre Espace de Colocation</h1>
+        <h1>Accueil</h1>
+        <!-- Contenu spécifique à chaque page -->
+        <p>Bienvenue sur notre site de colocation. Découvrez nos services et informations utiles.</p>
         <div class="cta">
-            <a href="contacts.html"><i class="fas fa-address-book"></i> Contacts Utiles</a>
+            <a href="contacts.html"><i class="fas fa-users"></i> Contacts Utiles</a>
             <a href="actualites.html"><i class="fas fa-newspaper"></i> Actualités</a>
-            <a href="espace_personnel.html"><i class="fas fa-user-cog"></i> Espace Personnel</a>
+            <a href="espace-personnel.html"><i class="fas fa-user"></i> Espace Personnel</a>
         </div>
     </div>
     
