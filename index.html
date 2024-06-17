@@ -17,40 +17,44 @@
             padding: 0;
             background: url('https://images.pexels.com/photos/3826678/pexels-photo-3826678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
             background-size: cover;
-            color: white;
+            color: #fff; /* Texte en blanc pour contraste */
         }
         .overlay {
-            background-color: rgba(0, 0, 0, 0.5); /* Overlay noir semi-transparent */
-            padding: 100px 0; /* Espace autour du contenu */
-            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
-        .overlay h1, .overlay p {
-            color: white; /* Texte blanc sur l'overlay */
-        }
-        .navigation {
-            background-color: rgba(0, 0, 0, 0.7); /* Fond foncé pour la navigation */
-            color: white;
+        .container {
+            max-width: 800px;
+            margin: 100px auto 20px; /* Ajout d'une marge top de 100px */
             padding: 20px;
             text-align: center;
         }
-        .navigation ul {
-            list-style-type: none;
-            padding: 0;
+        h1 {
+            margin-top: 0;
         }
-        .navigation li {
-            display: inline;
-            margin-right: 20px;
+        .cta {
+            margin-top: 20px;
         }
-        .about {
-            background-color: rgba(255, 255, 255, 0.9); /* Fond clair pour le contenu principal */
+        .cta a {
+            display: inline-block;
             padding: 20px;
-            text-align: center;
-            color: #333; /* Texte noir sur fond clair */
+            background-color: #3498db; /* Couleur de fond bleue */
+            color: #fff; /* Texte en blanc */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin: 10px;
         }
-        .about i {
-            font-size: 2em;
-            margin: 20px;
-            color: #3498db; /* Couleur des icônes */
+        .cta a:hover {
+            background-color: #2980b9; /* Couleur de fond bleue foncée au survol */
+        }
+        .cta a i {
+            font-size: 24px;
+            margin-right: 10px;
         }
         .footer {
             background-color: rgba(0, 0, 0, 0.7); /* Fond foncé pour le pied de page */
@@ -61,27 +65,22 @@
             bottom: 0;
             width: 100%;
         }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <div class="overlay">
-        <h1><i class="fas fa-home"></i> Bienvenue sur le site de notre Colocation</h1>
-        <p>Gérez facilement vos informations et communiquez efficacement avec nous.</p>
-    </div>
+    <div class="overlay"></div> <!-- Overlay noir transparent -->
     
-    <div class="navigation">
-        <ul>
-            <li><a href="contacts.html"><i class="fas fa-phone"></i> Contacts Utiles</a></li>
-            <li><a href="actualites.html"><i class="fas fa-newspaper"></i> Actualités</a></li>
-            <li><a href="espace_personnel.html"><i class="fas fa-user"></i> Espace Personnel</a></li>
-        </ul>
-    </div>
-    
-    <div class="about">
-        <h2>À Propos de Nous</h2>
-        <p>Notre colocation est située au [adresse]. Nous nous engageons à assurer votre confort et à répondre à vos besoins.</p>
-        
-        <p>Pour toute question ou assistance, n'hésitez pas à nous contacter à <a href="mailto:proprietaire@colocation.com">proprietaire@colocation.com</a>.</p>
+    <div class="container">
+        <h1>Bienvenue dans votre Espace de Colocation</h1>
+        <div class="cta">
+            <a href="contacts.html"><i class="fas fa-address-book"></i> Contacts Utiles</a>
+            <a href="actualites.html"><i class="fas fa-newspaper"></i> Actualités</a>
+            <a href="espace_personnel.html"><i class="fas fa-user-cog"></i> Espace Personnel</a>
+        </div>
     </div>
     
     <div class="footer">
