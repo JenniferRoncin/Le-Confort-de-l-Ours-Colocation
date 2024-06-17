@@ -19,22 +19,35 @@
             background-size: cover;
             color: #fff; /* Texte en blanc pour contraste */
         }
-
         .container {
             max-width: 800px;
             margin: 100px auto 20px; /* Ajout d'une marge top de 100px */
             padding: 20px;
-            text-align: center;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+            border-radius: 5px;
         }
         h1 {
             margin-top: 0;
+            color: #fff; /* Titre en blanc */
+        }
+        .article {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Ligne de séparation blanche transparente */
+        }
+        .article h2 {
+            color: #fff; /* Titre en blanc */
+        }
+        .article p {
+            color: #fff; /* Texte en blanc */
         }
         .cta {
             margin-top: 20px;
         }
         .cta a {
             display: inline-block;
-            padding: 20px;
+            padding: 10px 20px;
             background-color: #3498db; /* Couleur de fond bleue */
             color: #fff; /* Texte en blanc */
             text-decoration: none;
@@ -46,7 +59,7 @@
             background-color: #2980b9; /* Couleur de fond bleue foncée au survol */
         }
         .cta a i {
-            font-size: 24px;
+            font-size: 18px;
             margin-right: 10px;
         }
         .footer {
@@ -65,12 +78,34 @@
     </style>
 </head>
 <body>
-    <div class="overlay"></div> <!-- Overlay noir transparent -->
-    
     <div class="container">
         <h1>Actualités</h1>
-        <!-- Contenu spécifique à chaque page -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque mauris nec felis rutrum, sit amet molestie ante malesuada.</p>
+        
+        <!-- Article 1 -->
+        <div class="article">
+            <h2>Consommables Ménagers à Renouveler</h2>
+            <p>La femme de ménage a laissé une liste des produits ménagers à renouveler :</p>
+            <ul>
+                <li>Lessive</li>
+                <li>Nettoyant pour vitres</li>
+                <li>Désodorisant</li>
+            </ul>
+            <p>Date du dernier passage : 10 juin 2024</p>
+            <p>Prochain passage prévu : 25 juin 2024</p>
+        </div>
+        
+        <!-- Article 2 -->
+        <div class="article">
+            <h2>Horaire de la Femme de Ménage</h2>
+            <p>Les horaires de la femme de ménage ont été ajustés comme suit :</p>
+            <ul>
+                <li>Lundi : 9h00 - 12h00</li>
+                <li>Mercredi : 9h00 - 12h00</li>
+                <li>Vendredi : 9h00 - 12h00</li>
+            </ul>
+        </div>
+        
+        <!-- Bouton Retour à l'Accueil -->
         <div class="cta">
             <a href="index.html"><i class="fas fa-home"></i> Retour à l'Accueil</a>
         </div>
