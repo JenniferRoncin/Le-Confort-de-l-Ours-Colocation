@@ -8,22 +8,28 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
         }
         .banner {
-            background-color: #f0f0f0;
-            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
             text-align: center;
+            padding: 60px;
         }
         .banner h1 {
-            margin-bottom: 10px;
-            font-size: 2.5em;
+            font-size: 3em;
+            margin-bottom: 20px;
         }
         .banner p {
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
         .navigation {
-            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
         .navigation ul {
             list-style-type: none;
@@ -33,16 +39,34 @@
             display: inline;
             margin-right: 20px;
         }
+        .about {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+        }
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <div class="banner">
+        <img src="https://via.placeholder.com/800x400" alt="Photo de colocation">
         <h1>Bienvenue sur le site de notre Colocation</h1>
         <p>Gérez facilement vos informations et communiquez efficacement avec nous.</p>
     </div>
     
     <div class="navigation">
-        <h2>Navigation Rapide</h2>
         <ul>
             <li><a href="contacts.html">Contacts Utiles</a></li>
             <li><a href="actualites.html">Actualités</a></li>
@@ -50,15 +74,15 @@
         </ul>
     </div>
     
-    <div>
+    <div class="about">
         <h2>À Propos de Nous</h2>
         <p>Notre colocation est située au [adresse]. Nous nous engageons à assurer votre confort et à répondre à vos besoins.</p>
         
         <p>Pour toute question ou assistance, n'hésitez pas à nous contacter à <a href="mailto:proprietaire@colocation.com">proprietaire@colocation.com</a>.</p>
     </div>
     
-    <footer>
+    <div class="footer">
         <p>&copy; 2024 Colocation. Tous droits réservés.</p>
-    </footer>
+    </div>
 </body>
 </html>
